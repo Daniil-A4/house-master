@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="icons.css">
+  <link rel="stylesheet" href="adaptive.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <!-- FAVICONS ICON -->
+  <link rel="shortcut icon" type="image/png" href="" />
+
+  <script defer src="script.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <ul class="header__contacts">
+            <li class="header__number">
+              <a href="tel:+380963625580">+38 (096) 362 55 80</a>
+            </li>
+            <li class="header__mail">
+              <a href="mailto:house-master@gmail.com">house-master@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container _container">
+          <div class="hero__wrapper">
+            <div class="hero__column-content">
+              <h1 class="hero__offer">Вам потрібно щось відремонтувати?</h1>
+              <h3 class="hero__sub-offer">Домашній майстер - подбає про вашу оселю</h3>
+              <a href="#popup" class="hero__line-button popup-link">
+                <span class="hero__line-button-text">
+                  <span>розрахувати вартість</span>
+                </span>
+                <!-- <input class="hero__btn popup-link" type="button" value="розрахувати вартість"> -->
+            </div>
+            <div class="hero__column-socials">
+              <ul class="hero__socials-list">
+                <li><a href="https://instagram.com/zbuduemo"><i class="social-icon icon-instagram_icon"></i></a></li>
+                <li><a
+                    href="https://www.facebook.com/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%96%D0%B9-%D0%BC%D0%B0%D0%B9%D1%81%D1%82%D0%B5%D1%80-100612136328470/reviews/?ref=page_internal"><i
+                      class="social-icon icon-facebook_icon"></i></a></li>
+                <li><a href="https://www.tiktok.com/@domashniimaster?_t=8cEm0dd80qT&_r=1"><i
+                      class="social-icon icon-tiktok_icon"></i></a>
+              </ul>
+            </div>
+          </div>
+          <div class="hero__advantages advantages">
+            <div class="advantages__item">Виїзд на об'єкт протягом 2 годин<p class="icon-check_icon"></p>
+            </div>
+            <div class="advantages__item">За якість робіт відповідаємо<p class="icon-check_icon"></p>
+            </div>
+            <div class="advantages__item">Допомога з будь-якою проблемою<p class="icon-check_icon"></p>
+            </div>
+            <div class="advantages__item">Співпраця з ОСББ<p class="icon-check_icon"></p>
+            </div>
+            <div class="advantages__item">Надання комплексного ремонту під ключ<p class="icon-check_icon"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="typeOfJobs">
+        <div class="typeOfJobs__container _container">
+          <h2 class="typeOfJobs__title">Що ми пропонуємо?</h2>
+          <ul class="typeOfJobs__list">
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Укладання ламінату, знепилювання, ґрунтування, укладання підкладки (м2)</p>
+              <p class="typeOfJobs__price">135 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж плінтуса (дерево, пласт. мдф) (м.п.) </p>
+              <p class="typeOfJobs__price">110 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення бойлера (шт.)</p>
+              <p class="typeOfJobs__price">від 650 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення умивальника (шт.)</p>
+              <p class="typeOfJobs__price">від 500 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення /заміна унітазу (шт.) </p>
+              <p class="typeOfJobs__price">від 800 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Підключення посудомийки, пральна машина (шт.)</p>
+              <p class="typeOfJobs__price">500 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення заміни лічильників води (шт.)</p>
+              <p class="typeOfJobs__price">від 300 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення пральної машини (шт.)</p>
+              <p class="typeOfJobs__price">500 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення мийки (шт.)</p>
+              <p class="typeOfJobs__price">500 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення сифону (шт.)</p>
+              <p class="typeOfJobs__price">від 300 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Заміна сифона пластикового (шт.)</p>
+              <p class="typeOfJobs__price">від 450 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення та заміна сушки для рушників (шт.)</p>
+              <p class="typeOfJobs__price">від 1000 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Демонтаж змішувача (шт.)</p>
+              <p class="typeOfJobs__price">від 250 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення та заміна лічильників води (шт.)</p>
+              <p class="typeOfJobs__price">від 300 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення та заміна фільтрів для води (шт.)</p>
+              <p class="typeOfJobs__price">від 600 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення та ремонт сифону (шт.)</p>
+              <p class="typeOfJobs__price">від 450 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення та ремонт змішувача (шт.)</p>
+              <p class="typeOfJobs__price">від 450 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення та ремонт кухонної мийки. (шт.)</p>
+              <p class="typeOfJobs__price">від 500 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Демонтаж умивальника (шт.)</p>
+              <p class="typeOfJobs__price">400 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення ванни (шт.)</p>
+              <p class="typeOfJobs__price">від 800 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж фільтра зворотного осмосу</p>
+              <p class="typeOfJobs__price">від 1200грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Складання меблів (шт.)</p>
+              <p class="typeOfJobs__price">від 350грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Ремонт меблів (ремонт дверей шафи-купе, кухонних меблів, ремонт/заміна ламелів
+                у дивані/ліжку, ремонт механізмів у ліжках/диванах, заміна фурнітури) (шт.)</p>
+              <p class="typeOfJobs__price">від 300 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Демонтаж та розбирання меблів (шт.)</p>
+              <p class="typeOfJobs__price">від 300грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Ремонт ПВХ вікон та дверей (шт.)</p>
+              <p class="typeOfJobs__price">від 250 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Складання шафи-купе (шт.)</p>
+              <p class="typeOfJobs__price">від 800грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Складання кухні (м/п)</p>
+              <p class="typeOfJobs__price">700грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення водонагрівача (шт.)</p>
+              <p class="typeOfJobs__price"> від 800 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення витяжки (шт.)</p>
+              <p class="typeOfJobs__price">від 450 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення телевізора (шт.)</p>
+              <p class="typeOfJobs__price">від 450 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення варильної панелі (шт.)</p>
+              <p class="typeOfJobs__price">від 300 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення духової шафи (шт.)</p>
+              <p class="typeOfJobs__price">від 450 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення електроплити (шт.)</p>
+              <p class="typeOfJobs__price">500 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення холодильника (шт)</p>
+              <p class="typeOfJobs__price">300 грн.</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Заміна електропроводки (шт.)</p>
+              <p class="typeOfJobs__price">від 300 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення світильників (шт)</p>
+              <p class="typeOfJobs__price">від 250 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Прокладка кабелю (мп)</p>
+              <p class="typeOfJobs__price">від 20 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Встановлення розеток (шт.)</p>
+              <p class="typeOfJobs__price">від 85 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Підключення електроплити (шт.)</p>
+              <p class="typeOfJobs__price">500 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж розеток та вимикачів у зборі (шт)</p>
+              <p class="typeOfJobs__price">150 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж світильників вбудованих (точки) (шт.)</p>
+              <p class="typeOfJobs__price">220 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж люстр і стельових світильників (шт.)</p>
+              <p class="typeOfJobs__price">350грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text"> Прохід кабелю через стіну (шт.)</p>
+              <p class="typeOfJobs__price">35 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж та розпаювання коробок розподільних (шт.)</p>
+              <p class="typeOfJobs__price">250 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Різання штроб (шт.)</p>
+              <p class="typeOfJobs__price">від 70 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж вентиляторів (шт.)</p>
+              <p class="typeOfJobs__price">350грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж та підключення каміна (шт.)</p>
+              <p class="typeOfJobs__price">600 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж та підключення витяжки (м.п.)</p>
+              <p class="typeOfJobs__price">450 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж LED стрічки (з профілем) (шт.)</p>
+              <p class="typeOfJobs__price">150 грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж сушки для рушників (шт.)</p>
+              <p class="typeOfJobs__price">від 350</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж карнизів</p>
+              <p class="typeOfJobs__price">від 250грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Прочищення каналізації</p>
+              <p class="typeOfJobs__price">від 350грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Заміна лампочок</p>
+              <p class="typeOfJobs__price">від 20грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Складання ліжка</p>
+              <p class="typeOfJobs__price">від 800грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Mонтаж дзеркала</p>
+              <p class="typeOfJobs__price">від 450грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Монтаж картин</p>
+              <p class="typeOfJobs__price">від 150грн</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Утеплення балкона під ключ </p>
+              <p class="typeOfJobs__price">від 22000 грн.</p>
+            </li>
+            <li class="typeOfJobs__item">
+              <p class="typeOfJobs__text">Послуга кухаря-мангальника (4 години)</p>
+              <p class="typeOfJobs__price">3000грн</p>
+            </li>
+          </ul>
+          <div class="typeOfJobs__buttons">
+            <input class="typeOfJobs__show-btn" type="button" value="Подивитись більше">
+            <input class="typeOfJobs__close-btn" type="button" value="Згорнути">
+          </div>
+        </div>
+      </section>
+
+      <section class="send-form">
+        <div class="send-form__bg">
+          <div class="send-form__container _container">
+            <div class="send-form__body">
+              <div class="send-form__card">
+                <h2 class="send-form__title"><span>Готові</span> обговорити з нами проєкт?</h2>
+                <p class="send-form__sub-title">Залишіть заявку і ми з вами зв'яжемось</p>
+                <form class="send-form__form" action="javascript:">
+                  <div>
+                    <input class="send-form__name" type="text" name="name" placeholder="Ім'я" required
+                      pattern="^([a-zA-Z'\-]{1,50}|[а-яА-ЯёЁ'\-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'\-]{1,50})$">
+                  </div>
+                  <div>
+                    <input class="send-form__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
+                      pattern="^(\+?\d{1,5} ?)?(\(\d{2,3}\)|\d{2,3})( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}$">
+                  </div>
+                  <div>
+                    <button class="send-form__button">Надіслати</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__container _container">
+          <div class="gallery__body">
+            <h2 class="gallery__title">Галерея робіт</h2>
+            <div class="gallery-swiper swiper-container">
+              <div class="gallery__wrapper swiper-wrapper">
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/01.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/01.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/02.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/02.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/03.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/03.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/04.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/04.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/05.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/05.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/06.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/06.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/07.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/07.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/08.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/08.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/09.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/09.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/10.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/10.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/11.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/11.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/12.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/12.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/13.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/13.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/14.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/14.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/15.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/15.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/16.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/16.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/17.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/17.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/18.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/18.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/19.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/19.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/20.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/20.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/21.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/21.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/22.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/22.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/23.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/23.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/24.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/24.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/25.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/25.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/26.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/26.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/27.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/27.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/28.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/28.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/29.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/29.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/30.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/30.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/31.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/31.jpg" alt="image">
+                  </a>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                  <a href="./image/gallery/32.jpg" class="gallery__image" data-fancybox="gall">
+                    <img src="./image/gallery/32.jpg" alt="image">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="slider__arrows">
+                <button type="button" class="slider__arrow slider-arrow_prev icon-arrow_left_icon"></button>
+                <button type="button" class="slider__arrow slider-arrow_next icon-arrow_right_icon"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="question-answer">
+        <div class="question-answer__container _container">
+          <div class="question-answer__body">
+            <h2 class="question-answer__title">Питання/Bідповідь</h2>
+            <ul class="question-answer__list">
+              <li class="question-answer__item">
+                <div class="question-answer__f-row">
+                  <h3 class="question-answer__question">Коли можна викликати майстра?</h3>
+                  <img class="question-answer__arrow" src="image/arrow_icon.svg" alt="arrow">
+                </div>
+                <p class="question-answer__answer">Майстер може приїхати через 1-2 години чи сьогодні до кінця дня
+                  (доплата за терміновість +100/200 грн). <br> Не терміново? Оформляйте попереднє замовлення на зручний
+                  для Вас час – майстер 100% приїде вчасно.
+                </p>
+              </li>
+              <li class="question-answer__item">
+                <div class="question-answer__f-row">
+                  <h3 class="question-answer__question">Майстер може привезти матеріали з собою?</h3>
+                  <img class="question-answer__arrow" src="image/arrow_icon.svg" alt="arrow">
+                </div>
+                <p class="question-answer__answer">Так, майстр має базовий набір комплектуючих. Якщо потрібних
+                  матеріалів не виявиться - майстер купить все необхідне та доставити замовнику (вартість закупівлі -
+                  50/100 грн.).</p>
+              </li>
+              <li class="question-answer__item">
+                <div class="question-answer__f-row">
+                  <h3 class="question-answer__question">Можна надіслати фото на Viber - для попередньою консультації?
+                  </h3>
+                  <img class="question-answer__arrow" src="image/arrow_icon.svg" alt="arrow">
+                </div>
+                <p class="question-answer__answer">Так, Ви можете надіслати фото на Viber, E-mail, Telegram - для
+                  попередньої оцінки "фронту" та вартості робіт.</p>
+              </li>
+              <li class="question-answer__item">
+                <div class="question-answer__f-row">
+                  <h3 class="question-answer__question">Ви маєте ліцензію? Ви даєте гарантії?</h3>
+                  <img class="question-answer__arrow" src="image/arrow_icon.svg" alt="arrow">
+                </div>
+                <p class="question-answer__answer">Так, у нас є ліцензія на роботи, надаємо все необхідні документи. Ми
+                  відповідаємо за свою роботу! Офіційна гарантія – 1 рік. У нас є відділ контролю якості у разі, якщо
+                  щось піде негаразд.</p>
+              </li>
+              <li class="question-answer__item">
+                <div class="question-answer__f-row">
+                  <h3 class="question-answer__question">Скільки коштує виклик майстра?</h3>
+                  <img class="question-answer__arrow" src="image/arrow_icon.svg" alt="arrow">
+                </div>
+                <p class="question-answer__answer">Виклик майстра – безкоштовний (за умови, що роботи виконуються в день
+                  виїзду). Якщо роботи переносяться або клієнт відмовляється від послуги – вартість консультації 200
+                  грн.</p>
+              </li>
+              <li class="question-answer__item">
+                <div class="question-answer__f-row">
+                  <h3 class="question-answer__question">Чи можна сплатити на картку? Можливий безготівковий розрахунок?
+                  </h3>
+                  <img class="question-answer__arrow" src="image/arrow_icon.svg" alt="arrow">
+                </div>
+                <p class="question-answer__answer">Оплата - готівкою, на карту або за безготівковим розрахунком.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__container _container">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <ul class="footer__contacts">
+            <li class="footer__title-contacts">
+              <h4>Контакти</h4>
+            </li>
+            <li class="footer__number">
+              <a href="tel:+380963625580">+38 (096) 362 55 80</a>
+            </li>
+            <li class="footer__mail">
+              <a href="mailto:house-master@gmail.com">house-master@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle">
+          <h3 class="footer__title">Думайте про головне, а ми подбаємо про дрібниці</h3>
+        </div>
+        <div class="footer__bottom">
+          <ul class="footer__socials-list">
+            <li><a href="https://instagram.com/zbuduemo"><i class="social-icon icon-instagram_icon"></i></a>
+            </li>
+            <li><a
+                href="https://www.facebook.com/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%96%D0%B9-%D0%BC%D0%B0%D0%B9%D1%81%D1%82%D0%B5%D1%80-100612136328470/reviews/?ref=page_internal"><i
+                  class="social-icon icon-facebook_icon"></i></a>
+            </li>
+            <li><a href="https://www.tiktok.com/@domashniimaster?_t=8cEm0dd80qT&_r=1"><i
+                  class="social-icon icon-tiktok_icon"></i></a>
+            </li>
+          </ul>
+          <p class="cop">© 2023 <span>Домашній майстер.</span> Всі права захищені.</p>
+        </div>
+      </section>
+    </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="close-popup">&times;</a>
+          <h4 class="popap__title">Ми зв'яжемося з Вами найближчим часом!</h4>
+          <form class="popup__form" action="javascript:">
+            <div><input name="name" class="popup__name" type="text" placeholder="Ім'я" required
+                pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$">
+            </div>
+            <div><input name="number" class="popup__number" type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _"
+                required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}">
+            </div>
+            <div>
+              <select name="" class="popup__districts">
+                <option value="Деснянський">Деснянський</option>
+                <option value="Дарницький">Дарницький</option>
+                <option value="Подільський">Подільський</option>
+                <option value="Святошинський"> Святошинський</option>
+                <option value="Солом’янський"> Солом’янський</option>
+                <option value="Дніпровський"> Дніпровський</option>
+                <option value="Оболонський"> Оболонський</option>
+                <option value="Печерський"> Печерський</option>
+                <option value="Шевченківський"> Шевченківський</option>
+                <option value="Голосіївський"> Голосіївський</option>
+              </select>
+            </div>
+            <div>
+              <textarea class="popup__textarea" name="" cols="30" rows="10"
+                placeholder="Що потрібно виконати?"></textarea>
+            </div>
+            <div>
+              <button class="popup__button">Надіслати</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</body>
+
+</html>
