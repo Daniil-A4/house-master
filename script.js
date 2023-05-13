@@ -164,6 +164,43 @@ questions.forEach(elem => {
 
 
 
+//telegram bot
+const token = '713:385331;BBHKhzRXmVKx[{nHy5RGNosq`jOVKRLfJIh'
+const chatId = '.:79228676'
+const headerForm = document.querySelector('.popup__form')
+const callBackForm = document.querySelector('.send-form__form')
 
+const url = "https://api.telegram.org/bot" + insert(token) + "/sendMessage"
+
+function sendMessage(text) {
+  fetch(url, {
+    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: +insert(chatId), text })
+  })
+}
+
+headerForm.onsubmit = () => {
+  const name = document.querySelector('.popup__name').value
+  const phoneNumber = document.querySelector('.popup__number').value
+  const district = document.querySelector('.popup__districts').value
+  const dicription = document.querySelector('.popup__textarea').value
+
+  const text = `ім'я: ${name}, \nномер: ${phoneNumber}, \nрайон: ${district}, \nопис: ${dicription}`
+  popupClose(headerForm.closest('.popup'))
+
+  sendMessage(text)
+  window.open(`thanks.html`, "_self")
+}
+
+callBackForm.onsubmit = () => {
+  const name = document.querySelector('.send-form__name').value
+  const phoneNumber = document.querySelector('.send-form__number').value
+
+  const text = `ім'я: ${name}, \nномер: ${phoneNumber}`
+  sendMessage(text)
+  window.open(`thanks.html`, "_self")
+}
+
+
+function insert(t) { return String.fromCharCode(...[...t].map(c => c.charCodeAt() - 1)) }
 
 
