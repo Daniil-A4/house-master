@@ -172,13 +172,13 @@ const callBackForm = document.querySelector('.send-form__form')
 
 const url = "https://api.telegram.org/bot" + insert(token) + "/sendMessage"
 
-function sendMessage(text) {
-  fetch(url, {
+async function sendMessage(text) {
+  await fetch(url, {
     method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id: +insert(chatId), text })
   })
 }
 
-headerForm.onsubmit = () => {
+headerForm.onsubmit = async () => {
   const name = document.querySelector('.popup__name').value
   const phoneNumber = document.querySelector('.popup__number').value
   const district = document.querySelector('.popup__districts').value
@@ -191,7 +191,7 @@ headerForm.onsubmit = () => {
   window.open(`thanks.html`, "_self")
 }
 
-callBackForm.onsubmit = () => {
+callBackForm.onsubmit = async () => {
   const name = document.querySelector('.send-form__name').value
   const phoneNumber = document.querySelector('.send-form__number').value
 
