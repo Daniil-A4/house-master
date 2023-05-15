@@ -139,29 +139,46 @@ new Swiper('.gallery-swiper', {
 
 
 //acordion
-const questions = document.querySelectorAll('.question-answer__f-row')
+// const questions = document.querySelectorAll('.question-answer__f-row')
 
 
-questions.forEach(elem => {
-  const answer = elem.nextElementSibling
-  const arrow = elem.querySelector('.question-answer__arrow')
-  const contentHeight = answer.scrollHeight + 'px';
-  answer.style.maxHeight = '0'
-  answer.style.overflow = 'hidden'
 
-  elem.addEventListener('click', function() {
-    if (answer.style.maxHeight === '0px') {
-      answer.style.maxHeight = contentHeight
-      answer.style.marginTop = '20px'
-      arrow.style.transform = 'rotate(270deg)';
-    } else {
-      answer.style.marginTop = '0px'
-      answer.style.maxHeight = '0'
-      arrow.style.transform = 'rotate(90deg)';
-    }
-  })
-})
+// questions.forEach(elem => {
+//   const answer = elem.nextElementSibling
+//   const arrow = elem.querySelector('.question-answer__arrow')
+//   const contentHeight = answer.scrollHeight + 'px';
+//   answer.style.maxHeight = '0'
+//   answer.style.overflow = 'hidden'
 
+//   elem.addEventListener('click', function() {
+//     if (answer.style.maxHeight === '0px') {
+//       answer.style.maxHeight = contentHeight
+//       answer.style.marginTop = '20px'
+//       arrow.style.transform = 'rotate(270deg)';
+//     } else {
+//       answer.style.marginTop = '0px'
+//       answer.style.maxHeight = '0'
+//       arrow.style.transform = 'rotate(90deg)';
+//     }
+//   })
+// })
+
+const questionList = document.querySelector('.question-answer__list')
+
+questionList.addEventListener('click', toggleAccordion)
+
+function toggleAccordion(e) {
+  const li = e.target.closest('li')
+  if (!li) return
+  const currentLi = questionList.querySelector('.active')
+  currentLi?.classList.remove('active')
+
+  if (li != currentLi) {
+    li.classList.toggle('active')
+  }
+  
+  
+}
 
 
 //telegram bot
@@ -187,7 +204,7 @@ headerForm.onsubmit = async () => {
   const text = `ім'я: ${name}, \nномер: ${phoneNumber}, \nрайон: ${district}, \nопис: ${dicription}`
   popupClose(headerForm.closest('.popup'))
 
-  sendMessage(text)
+  await sendMessage(text)
   window.open(`thanks.html`, "_self")
 }
 
@@ -196,7 +213,7 @@ callBackForm.onsubmit = async () => {
   const phoneNumber = document.querySelector('.send-form__number').value
 
   const text = `ім'я: ${name}, \nномер: ${phoneNumber}`
-  sendMessage(text)
+  await sendMessage(text)
   window.open(`thanks.html`, "_self")
 }
 

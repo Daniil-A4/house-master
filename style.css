@@ -31,8 +31,9 @@
 }
 
 @media (any-hover:hover) {
+
   .header__mail a:hover,
-  .header__number a:hover  {
+  .header__number a:hover {
     border-bottom: 1px solid white;
   }
 }
@@ -121,9 +122,7 @@
   }
 }
 
-.hero__column-socials {
-  
-}
+.hero__column-socials {}
 
 .hero__socials-list li {
   margin-bottom: 10px;
@@ -471,6 +470,10 @@
   transition: all 0.3s ease-out;
   transform: rotate(90deg);
 }
+.active .question-answer__arrow {
+  transform: rotate(270deg);
+}
+
 
 .question-answer__answer {
   transition: all 0.3s ease-out;
@@ -478,7 +481,19 @@
   line-height: 115%;
   font-weight: 100;
   letter-spacing: 1px;
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
 }
+.question-answer__answer p{
+  overflow: hidden;
+}
+
+.active .question-answer__answer {
+  grid-template-rows: 1fr;
+}
+
+
 
 /* =============================================================== */
 
@@ -493,32 +508,37 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .footer__logo {
-  
+
   width: 80px;
   height: 80px;
 }
-.footer__logo img{
+
+.footer__logo img {
   width: 100%;
   height: 100%;
 }
+
 .footer__title-contacts {
   margin-bottom: 10px;
   letter-spacing: 0.7px;
 }
-.footer__number, 
+
+.footer__number,
 .footer__mail {
   margin-bottom: 10px;
 }
+
 .footer__number a,
-.footer__mail a{
+.footer__mail a {
   color: white;
 }
 
 .footer__mail {}
 
-.footer__title {
-}
+.footer__title {}
+
 .footer__middle {
   display: flex;
   justify-content: center;
@@ -531,6 +551,7 @@
 .footer__bottom {
   text-align: center;
 }
+
 .footer__socials-list {
   display: flex;
   justify-content: center;
@@ -541,11 +562,15 @@
 .social-icon {
   text-align: center;
 }
+
 .icon-instagram_icon {}
+
 .icon-facebook_icon {}
-.cop span{
+
+.cop span {
   font-weight: 500;
 }
+
 .cop {
   font-weight: 100;
   font-size: 14px;
