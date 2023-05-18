@@ -239,7 +239,9 @@
 }
 
 .options__item.active {
-  background-color: #f7f700;
+  background-color: #fdfdfd;
+  border: 1px solid rgb(201, 201, 0);
+  box-shadow: 1px 1px 5px 1px #f99d3f;
 }
 
 .active .typeOfJobs__list {
