@@ -36,8 +36,8 @@ function popupOpen(curentPopup) {
     const popupActive = document.querySelector('.popup.open')
     if (popupActive) {
       popupClose(popupActive, false)
-    } 
-    
+    }
+
     curentPopup.classList.add('open')
     wrapper.classList.add('_lock')
     curentPopup.addEventListener('click', function (e) {
@@ -66,34 +66,51 @@ document.addEventListener('keydown', function (e) {
 
 
 
-const typeOfJobsList = document.querySelector('.typeOfJobs__list')
-const typeOfJobsItems = document.querySelectorAll('.typeOfJobs__item')
-const typeOfJobsShowBtn = document.querySelector('.typeOfJobs__show-btn')
-const typeOfJobsCloseBtn = document.querySelector('.typeOfJobs__close-btn')
+// const typeOfJobsList = document.querySelector('.typeOfJobs__list')
+// const typeOfJobsItems = document.querySelectorAll('.typeOfJobs__item')
+// const typeOfJobsShowBtn = document.querySelector('.typeOfJobs__show-btn')
+// const typeOfJobsCloseBtn = document.querySelector('.typeOfJobs__close-btn')
 
-for (let i = 20; i < typeOfJobsItems.length; i++) {
-  typeOfJobsItems[i].style.display ='none'
+// for (let i = 20; i < typeOfJobsItems.length; i++) {
+//   typeOfJobsItems[i].style.display = 'none'
+// }
+
+// typeOfJobsShowBtn.addEventListener('click', showTypeOfJobs)
+// typeOfJobsCloseBtn.addEventListener('click', closeTypeOfJobs)
+
+// function showTypeOfJobs() {
+//   for (let i = 20; i < typeOfJobsItems.length; i++) {
+//     typeOfJobsItems[i].style.display = 'flex'
+//   }
+//   typeOfJobsShowBtn.style.display = 'none'
+//   typeOfJobsCloseBtn.style.display = 'block'
+// }
+
+// function closeTypeOfJobs() {
+//   for (let i = 20; i < typeOfJobsItems.length; i++) {
+//     typeOfJobsItems[i].style.display = 'none'
+//   }
+//   typeOfJobsShowBtn.style.display = 'block'
+//   typeOfJobsCloseBtn.style.display = 'none'
+// }
+
+
+const optionsList = document.querySelector('.options__list')
+
+optionsList.addEventListener('click', toggleOption)
+optionsList.firstElementChild.click()
+
+function toggleOption(e) {
+  const li = e.target.closest('li.options__item')
+
+  if (!li) return
+
+  const currentLi = optionsList.querySelector('.active')
+  currentLi?.classList.remove('active')
+
+  li.classList.add('active')
+  optionsList.style.marginBottom = li.firstElementChild.offsetHeight + 50 + 'px'
 }
-
-typeOfJobsShowBtn.addEventListener('click', showTypeOfJobs)
-typeOfJobsCloseBtn.addEventListener('click', closeTypeOfJobs)
-
-function showTypeOfJobs() {
-  for (let i = 20; i < typeOfJobsItems.length; i++) {
-    typeOfJobsItems[i].style.display ='flex'
-  }
-  typeOfJobsShowBtn.style.display = 'none'
-  typeOfJobsCloseBtn.style.display = 'block'
-}
-
-function closeTypeOfJobs() {
-  for (let i = 20; i < typeOfJobsItems.length; i++) {
-    typeOfJobsItems[i].style.display ='none'
-  }
-  typeOfJobsShowBtn.style.display = 'block'
-  typeOfJobsCloseBtn.style.display = 'none'
-}
-
 
 
 //gallery
@@ -110,7 +127,7 @@ new Swiper('.gallery-swiper', {
     prevEl: '.gallery-swiper .slider-arrow_prev',
   },
   effect: 'coverflow',
-  
+
   coverflowEffect: {
     rotate: 20,
     stretch: 30,
@@ -176,9 +193,24 @@ function toggleAccordion(e) {
   if (li != currentLi) {
     li.classList.toggle('active')
   }
-  
-  
 }
+
+
+//calculate current height hero and change height bg
+window.addEventListener('resize', changeHeroHeight)
+
+function changeHeroHeight() {
+  const heroContainer = document.querySelector('.hero__container')
+  const hero = document.querySelector('.hero')
+  const contentHeight = heroContainer.scrollHeight + 20 + 'px'
+  hero.style.height = contentHeight
+  console.log(contentHeight)
+}
+
+changeHeroHeight()
+
+
+
 
 
 //telegram bot
