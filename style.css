@@ -27,6 +27,7 @@
   cursor: pointer;
   display: block;
 }
+
 .header__mail {
   display: block;
 }
@@ -215,8 +216,23 @@
 
 .typeOfJobs__container {}
 
-.typeOfJobs__title {
+.title-box {
+  display: flex;
+  align-items: center;
   margin-bottom: 40px;
+}
+
+.title-line {
+  height: 2px;
+  width: 70px;
+  background-color: rgb(0, 63, 0);
+  margin-right: 10px;
+  transform: translateY(-50%);
+}
+
+
+.typeOfJobs__title {
+  
 }
 
 .options__list {
@@ -376,8 +392,11 @@
 }
 
 .send-form__title {
-  margin-bottom: 40px;
   color: white;
+}
+
+.line-white {
+  background-color: #fff;
 }
 
 .send-form__sub-title {
@@ -445,7 +464,6 @@
 .gallery__body {}
 
 .gallery__title {
-  margin-bottom: 40px;
 }
 
 .gallery-swiper {}
@@ -515,9 +533,7 @@
 
 .question-answer__body {}
 
-.question-answer__title {
-  margin-bottom: 40px;
-}
+
 
 .question-answer__list {}
 
