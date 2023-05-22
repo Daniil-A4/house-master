@@ -254,28 +254,68 @@
   justify-content: center;
 }
 
+
 .options__item.active {
   background-color: #fdfdfd;
   border: 1px solid rgb(201, 201, 0);
   box-shadow: 1px 1px 5px 1px #f99d3f;
 }
 
-.active .typeOfJobs__list {
+.active .options__wrapper  {
   opacity: 1;
-  display: flex;
-
+  display: block
 }
-
-.typeOfJobs__list {
+.options__wrapper {
+  opacity: 0;
   display: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
   position: absolute;
   top: calc(100% + 20px);
   left: 0;
-  opacity: 0;
-  transition: 0.3s;
   width: 100%;
+}
+
+.options__info {
+  margin-bottom: 20px;
+  line-height: 110%;
+  font-weight: 100;
+  position: relative;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+.options__info span{
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(0, 63, 0);
+}
+.options__info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(0, 63, 0);
+  transform: translateY(-4%);
+}
+
+
+
+/* .active .typeOfJobs__list {
+  opacity: 1;
+  display: flex;
+
+} */
+
+.typeOfJobs__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* position: absolute;
+  top: calc(100% + 20px);
+  left: 0; */
+  width: 100%;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .typeOfJobs__row {}
